@@ -1,0 +1,59 @@
+body {
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    transition: all .3s;
+}
+
+.select {
+    position: relative;
+    margin-bottom: 220px;
+    z-index: 1;
+}
+.select__btn {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.select__list {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: -1px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.select__list.active {
+    display: block;
+}
+
+.select__item {
+    padding: 5px 10px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+.select__item:hover {
+    color: red;
+}
+
+.select__item:last-child {
+    border-bottom: none;
+}
+
