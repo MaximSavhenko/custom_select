@@ -21,11 +21,11 @@ function customSelect() {
         });
 
         
-        window.onclick = function (e) {
-                if (!event.target.matches('.select__btn')){
-                    listSelect.classList.remove('active');
-                };
-        }
+        window.addEventListener('mouseup', (e) =>{
+            if (!event.target.matches('.select__btn')){
+                listSelect.classList.remove('active');
+            };
+        })
     });
     
 };
